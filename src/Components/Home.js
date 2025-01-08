@@ -1,35 +1,41 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Dropzone from "./Dropzone";
 import Footer from "./Footer";
 import "./Home.css";
+
 function Home() {
   return (
     <>
-      <div className="content-container">
+      <div className="content-container min-h-screen bg-gray-100">
         <div>
           <Navbar />
         </div>
-        <div className="contain">
-          <h1 style={{color: "black", fontSize: "1.6rem", fontWeight: "bold", marginBottom:'1em'}}>
-            Convert Your Videos to Audio Online: Supported Formats - MP3, WAV,
-            OGG, AAC, WMA, FLAC, M4A
+        <div className="contain flex items-center justify-center flex-col text-center py-20">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+            🚧 Under Construction 🚧
           </h1>
-          <p>
-            Utilize our free online video to audio converter tool to seamlessly
-            transform your videos into high-quality audio files. Supported
-            formats include MP3, WAV, OGG, AAC, WMA, FLAC, and M4A. Simply
-            upload your videos in any format and download the converted audio
-            effortlessly. Try our free online converter now!
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl">
+            We're currently working hard to make this page awesome. Stay tuned for exciting updates! 
+            Thank you for your patience.
           </p>
-        </div>
-
-        <div>
-          <Dropzone />
+          <div className="mt-10">
+            <img
+              src="https://via.placeholder.com/600x400?text=Coming+Soon+Illustration"
+              alt="Under Construction"
+              className="w-full max-w-md mx-auto"
+            />
+          </div>
+          <div className="mt-10">
+            <a
+              href="#"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-all duration-300"
+            >
+              Notify Me When Ready
+            </a>
+          </div>
         </div>
       </div>
-
-      <div style={{marginTop:'8rem'}}>
+      <div style={{  }}>
         <Footer />
       </div>
     </>

@@ -5,7 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { AppRegistry } from "react-native"; // Import AppRegistry from react-native
 
+
+
+AppRegistry.registerComponent("AppStrap", () => App);
+const rootTag = document.getElementById("root");
+AppRegistry.runApplication("AppStrap", {
+  initialProps: {},
+  rootTag,
+});
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

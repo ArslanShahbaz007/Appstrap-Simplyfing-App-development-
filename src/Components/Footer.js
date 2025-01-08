@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="copyright">
-        &copy; {new Date().getFullYear()} Online Video to Audio Converter
+        &copy; {new Date().getFullYear()} AppStrap - Simplifying App Development
       </div>
     </footer>
   );

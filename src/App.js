@@ -1,5 +1,6 @@
 import Home from './Components/Home';
-import About from './Components/About'
+import Components from './Components/Components'
+import Templates from './Components/Templates'
 import {
   BrowserRouter,
   Routes,
@@ -13,7 +14,8 @@ function App() {
         <div className="">
         <Routes>
            <Route exact path='/' element={<Home/>}></Route>
-           <Route exact path='/about' element={<About/>}></Route>        
+           <Route exact path='/components' element={<Components/>}></Route>
+           <Route exact path='/templates' element={<Templates/>}></Route>        
         </Routes>
         </div>
         </BrowserRouter>    
