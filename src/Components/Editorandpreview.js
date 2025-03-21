@@ -4,6 +4,12 @@ import { Editor } from "@monaco-editor/react";
 import * as Babel from "@babel/standalone";
 import Accordion from "./Accordiannative";
 import AlertNative from "./AlertNative"; // Import AlertNative here
+import ButtonNative from "./buttonNative";
+import Card from "./card";
+import ToggleSwitch from "./ToggleSwitch";
+import BadgeNative from "./badge";
+import ProgressBarNative from "./Progressbar";
+
 
 const EditorAndPreview = ({ code }) => {
   const [editorCode, setEditorCode] = useState(code);
@@ -31,9 +37,23 @@ const EditorAndPreview = ({ code }) => {
         "React",
         "Accordion",
         "AlertNative",
+        "ButtonNative",
+        "Card",
+        "ToggleSwitch",
+        "BadgeNative",
+        "ProgressBarNative",
         `${transformedCode}; return App;`
       );
-      return Component(React, Accordion, AlertNative)();
+      return Component(
+        React,
+        Accordion,
+        AlertNative,
+        ButtonNative,
+        Card,
+        ToggleSwitch,
+        BadgeNative,
+        ProgressBarNative,
+      )();
     } catch (err) {
       return <Text style={{ color: "red" }}>Error: {err.message}</Text>;
     }
